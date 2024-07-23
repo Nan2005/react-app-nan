@@ -25,7 +25,7 @@ const todos = [
         title: "นอน",
         description: "ที่บ้าน",
         cover: "/images/k2.png",
-        icon: "/images/n3.jpg",
+        icon: "/images/n3.jpeg",
         enrollment: true,
         checked: false
     }
@@ -108,7 +108,7 @@ export default function ToDoLists () {
     );
 
     const items = enrItems.map(item =>
-        <Item id={item.id} title={item.title} chk={item.checked} desc={item.description} cov={item.cover} ico={item.icon} enr={item.enrollment} />
+        <Item id={item.id} title={item.title} chk={item.checked} desc={item.description} cov={item.cover} ico={item.icon} enr={item.enrollment} key={item.id}/>
     );
     return (
     <div className="p-5 bg-violet-300">  
